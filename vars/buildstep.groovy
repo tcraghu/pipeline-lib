@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 import dev.jenkins.*
-import static ge.jenkins.BuildUtility.*
+import static dev.jenkins.BuildUtility.*
 
 
 def call(body) {
