@@ -47,7 +47,7 @@ def call(body) {
 
                         docker {
                                 image 'maven:3.8.1-adoptopenjdk-11'
-                                label 'my-defined-label'
+                                
                                 args  '-v /tmp:/tmp'
                             }
                                         
@@ -71,7 +71,7 @@ def call(body) {
                                                 [$class: 'CheckoutOption', timeout: 10000],
                                                 [$class: 'CloneOption', depth: 0, noTags: true, reference: '', shallow: true, timeout: 100]],
                                         submoduleCfg                     : [],
-                                        userRemoteConfigs                : [[credentialsId: 'GitHub', url: pipelineParams.scmUrl]]])
+                                        userRemoteConfigs                : [[credentialsId: 'GIT', url: pipelineParams.scmUrl]]])
 
 
                         script {
