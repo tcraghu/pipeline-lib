@@ -50,7 +50,7 @@ class envVariable implements Serializable {
 
             if ( "${branch}" == "$Branch" ) {
             
-                this.name = data.name
+                //this.name = data.name
                 
               
             }
