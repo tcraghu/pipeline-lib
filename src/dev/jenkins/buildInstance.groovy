@@ -15,7 +15,7 @@ class buildInstance implements Serializable{
     
 
 
-     buildInstance(String composite,String Branch) {
+     buildInstance(String team,String Branch) {
         def EnvJason = new JsonSlurper().parseText(LoadEnvRes)    
         someglobal = EnvJason.Branch.keyname
         

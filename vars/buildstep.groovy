@@ -12,8 +12,8 @@ def call(body) {
     body()
 
     
-    def LoadVarRes = libraryResource pipelineParams.composite + '/vars.json'
-    def LoadEnvRes = libraryResource pipelineParams.composite + '/environment.json'
+    def LoadVarRes = libraryResource pipelineParams.team + '/vars.json'
+    def LoadEnvRes = libraryResource pipelineParams.team + '/environment.json'
 
     println("SCM URL is " + pipelineParams.scmUrl)
     Build_information = new envVariable(this, LoadEnvRes, LoadVarRes, "${env.BRANCH_NAME}")
