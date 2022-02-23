@@ -41,7 +41,7 @@ class BuildUtility implements Serializable  {
 
 
             printSHELL(script,"Running CODE",WinSystem)
-            String StdCmd = InitValue.getStandardCMD(script,WinSystem)
+            String StdCmd = InitValue.getStandardCMD(WinSystem)
 
             execSHELL(script,StdCmd,WinSystem)
         }
